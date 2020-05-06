@@ -44,7 +44,7 @@ document.getElementById('join_meeting').addEventListener('click', (e) => {
         success(res) {
             console.log('signature', res.result);
             ZoomMtg.init({
-                leaveUrl: 'http://www.zoom.us',
+                leaveUrl: 'http://localhost:8000/end-meeting',
                 success() {
                     ZoomMtg.join(
                         {

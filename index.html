@@ -62,12 +62,14 @@
             var email = window.location.href.split('?')[1];
             var meeting_no = window.location.href.split('?')[2];
             var pass = window.location.href.split('?')[3];
+            var type = window.location.href.split('?')[4];
             // alert(email);
 
 
             document.getElementById("display_name").value = email;
             document.getElementById("meeting_number").value = meeting_no;
             document.getElementById("meeting_pwd").value = pass;
+            document.getElementById("meeting_role").value = type;
             document.getElementById("join_meeting").click();
         });
     </script>
